@@ -1,0 +1,70 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #131524;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 100px;
+        }
+
+        .searchbar {
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            mat-icon {
+                color: #bebebe;
+                width: 25px;
+                font-size: x-large;
+            }
+
+            input {
+                border-radius: 10px;
+                height: 35px;
+                padding: 10px;
+                outline: 0;
+                color: rgb(39, 35, 35);
+                background: #bebebe;
+            }
+        }
+    }
+
+    .navlinks {
+        nav {
+
+            display: flex;
+
+            div {
+                padding: 10px;
+
+                mat-icon {
+                    color: #bebebe;
+                }
+            }
+
+            a {
+                justify-content: center;
+                align-items: center;
+                color: #bebebe;
+                text-decoration: none;
+                padding: 5px;
+                font-weight: 550;
+            }
+
+
+        }
+    }
+}
+
+mat-icon {
+    cursor: pointer;
+}

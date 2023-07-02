@@ -1,0 +1,82 @@
+<app-header></app-header>
+
+<div class="main-content">
+  <div class="sidemenu">
+    <ul>
+      <li>
+        <mat-icon>work_outline</mat-icon>
+        <a routerLink="/jobs">My Jobs</a>
+      </li>
+      <li>
+        <mat-icon>home</mat-icon>
+        <a routerLink="/home">Home</a>
+      </li>
+      <li>
+        <mat-icon>notifications</mat-icon>
+        <a routerLink="/notifications">Notifications</a>
+      </li>
+      <li>
+        <mat-icon>message</mat-icon>
+        <a routerLink="/messaging">Messaging</a>
+      </li>
+      <li>
+        <mat-icon>description</mat-icon>
+        <a routerLink="/proposals">My Proposals</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="primary-content">
+    <div class="suggested-jobs">
+      <div class="sugg">
+        <h3>Suggested Jobs search</h3>
+
+        <div class="chips">
+          <span>Angular</span>
+          <span>React</span>
+          <span>Java</span>
+          <span>.Net</span>
+        </div>
+      </div>
+
+      <div class="jobs" *ngFor="let job of jobs; let i = index">
+        <div class="job">
+          <h4>{{ job.title }}</h4>
+          <div class="time">
+            <div>
+              <span>{{ job.postedin }}</span>
+              <span style="color: orangered"> Open</span>
+            </div>
+
+            <mat-icon color="primary">bookmark</mat-icon>
+          </div>
+          <p>{{ job.desc }}</p>
+          <div class="skills">
+            <span *ngFor="let skill of jobs[i].requiredskills">{{
+              skill
+            }}</span>
+          </div>
+          <div class="payment-location">
+            <span>
+              <mat-icon>check</mat-icon>
+              Payment Verified
+            </span>
+            <span>
+              <mat-icon>location_on</mat-icon>
+              {{ job.location }}</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="right-info">
+        <h6>Right info</h6>
+
+        <p>About Us</p>
+        <p>About Us</p>
+        <p>Contact Us</p>
+      </div>
+    </div>
+  </div>
+</div>

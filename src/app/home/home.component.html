@@ -1,0 +1,76 @@
+<app-header></app-header>
+
+<div class="main-content">
+  <div class="sidemenu">
+    <ul>
+      <li>
+        <mat-icon>work_outline</mat-icon>
+        <a routerLink="/jobs">My Jobs</a>
+      </li>
+      <li>
+        <mat-icon>home</mat-icon>
+        <a routerLink="/home">Home</a>
+      </li>
+      <li>
+        <mat-icon>notifications</mat-icon>
+        <a routerLink="/notifications">Notifications</a>
+      </li>
+      <li>
+        <mat-icon>message</mat-icon>
+        <a routerLink="/messaging">Messaging</a>
+      </li>
+      <li>
+        <mat-icon>description</mat-icon>
+        <a routerLink="/proposals">My Proposals</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="primary-content">
+    <div class="suggested-jobs">
+      <div class="post-job">
+        <h2>Dashboard</h2>
+        <h4>Post a job</h4>
+      </div>
+      <div class="sugg">
+        <h3>Latest Services</h3>
+      </div>
+
+      <div class="jobs">
+        <div class="job">
+          <h4>Build an application using Java</h4>
+          <div class="time">
+            <div>
+              <span>Posted: 8 days ago</span>
+              <span style="color: yellowgreen"> Open</span>
+            </div>
+            <div class="edit-bookmark">
+              <mat-icon color="primary" style="padding-right: 40px"
+                >create</mat-icon
+              >
+              <mat-icon color="primary">delete</mat-icon>
+            </div>
+          </div>
+          <p>I need an app that can record and do someting in partuicular</p>
+          <div class="skills">
+            <span></span>
+          </div>
+        </div>
+        <div style="padding-bottom: 0" class="counter">
+          <div class="proposals">
+            <h5>Proposals</h5>
+            <p>0</p>
+          </div>
+          <div class="messaged">
+            <h5>Messaged</h5>
+            <p>0</p>
+          </div>
+          <div class="hired">
+            <h5>Hired</h5>
+            <p>0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

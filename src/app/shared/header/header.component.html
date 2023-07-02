@@ -1,0 +1,51 @@
+<div class="navbar">
+  <div class="logo">
+    <img
+      class="logo"
+      style="cursor: pointer; width: 100px"
+      src="../../../assets/logo.png"
+      routerLink="/home"
+    />
+
+    <div class="searchbar">
+      <mat-icon style="cursor: pointer">search</mat-icon>
+      <input type="text" placeholder="Search" />
+    </div>
+  </div>
+
+  <div class="navlinks">
+    <nav>
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon routerLink="/home">home</mat-icon>
+        <a routerLink="/home"> Home </a>
+      </div>
+
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon routerLink="/jobs">work_outline</mat-icon>
+        <a routerLink="/jobs"> Jobs</a>
+      </div>
+
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon routerLink="/notifications">notifications</mat-icon>
+        <a routerLink="/notifications"> Notifications</a>
+      </div>
+
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon routerLink="/messaging">message</mat-icon>
+        <a routerLink="/messaging"> Messaging </a>
+      </div>
+    </nav>
+  </div>
+</div>
