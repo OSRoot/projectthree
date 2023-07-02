@@ -1,4 +1,75 @@
 <app-header></app-header>
 <div class="main-content">
-  <h1>This is Message</h1>
+  <div class="sidemenu">
+    <div class="header">
+      <h5>Messaging</h5>
+      <div>
+        <mat-icon>more_horiz</mat-icon>
+        <mat-icon>create</mat-icon>
+      </div>
+    </div>
+    <div class="search-message">
+      <div>
+        <mat-icon>search</mat-icon>
+        <input type="text" placeholder="search messages" />
+      </div>
+      <mat-icon>tune</mat-icon>
+    </div>
+
+    <div class="contacts" *ngFor="let contact of contacts">
+      <div class="contact" (click)="activate_contact()">
+        <div class="avatar">
+          <mat-icon>person</mat-icon>
+        </div>
+        <div class="name-message">
+          <h6>{{ contact.Name }}</h6>
+          <p>{{ contact.Message }}</p>
+        </div>
+
+        <div class="time">
+          <p>{{ contact.time }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="contact_active" class="message-content">
+    <div class="message-header">
+      <h5>Osroot From Jobful</h5>
+      <mat-icon>more_horiz</mat-icon>
+    </div>
+
+    <div class="contacter">
+      <div class="avatar">
+        <img src="../../assets/jobful.png" alt="" />
+      </div>
+      <div class="name-time">
+        <h4>{{ current_contact.Name }}</h4>
+        <p>Now</p>
+      </div>
+    </div>
+
+    <div
+      class="content"
+      *ngFor="let message of current_contact.Message; let i = index"
+    >
+      <h6>{{ current_contact.Message[i] }}</h6>
+    </div>
+
+    <div class="message-field">
+      <div class="message-input">
+        <textarea
+          type="text"
+          cols="20"
+          placeholder="write a message"
+        ></textarea>
+
+        <div class="btns">
+          <div class="send-btn">
+            <button>Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

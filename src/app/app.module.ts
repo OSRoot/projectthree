@@ -12,10 +12,13 @@ import { HomeComponent } from './home/home.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { MessagingComponent } from './messaging/messaging.component';
-import { FreelancerComponent } from './freelancer/freelancer.component';
-import { ClientComponent } from './client/client.component';
+// import { FreelancerComponent } from './freelancer/freelancer.component';
+// import { ClientComponent } from './client/client.component';
 import { MatChipsModule } from '@angular/material/chips';
 import { ProposalsComponent } from './proposals/proposals.component';
+import { FreelancerComponent } from './freelancer/freelancer/freelancer.component';
+import { ClientComponent } from './client/client/client.component';
+import { JobComponent } from './job/job.component';
 
 
 @NgModule({
@@ -25,9 +28,12 @@ import { ProposalsComponent } from './proposals/proposals.component';
     JobsComponent,
     NotificationsComponent,
     MessagingComponent,
+    // FreelancerComponent,
+    // ClientComponent,
+    ProposalsComponent,
     FreelancerComponent,
     ClientComponent,
-    ProposalsComponent,
+    JobComponent,
     // WelcomeComponent
   ],
   imports: [

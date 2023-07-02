@@ -1,3 +1,19 @@
 .main-content {
-    padding-top: 100px;
+    padding-top: 80px;
+    width: 70%;
+    margin: auto;
+
+    .header-title {
+        text-align: center;
+    }
+
+    .notiification {
+        padding: 20px;
+        width: 100%;
+        background: #292b3a;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+    }
 }

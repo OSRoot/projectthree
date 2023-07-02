@@ -203,7 +203,23 @@
 
             }
 
+            .work-talent {
+                .talent {
+                    border-top: 1px solid gray;
+                    padding: 20px;
+                }
 
+                .s1 {
+                    background: #292b3a;
+                    padding: 20px;
+                    margin: 10px;
+                    border-radius: 10px;
+
+                    h6 {
+                        font-weight: 700;
+                    }
+                }
+            }
         }
 
         .right-side {

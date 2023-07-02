@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WelcomeComponent } from './welcome.component';
+import { MatIconModule } from '@angular/material/icon';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -9,7 +11,9 @@ import { WelcomeComponent } from './welcome.component';
     WelcomeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatIconModule,
+    RouterModule
   ]
 })
 export class WelcomeModule { }
