@@ -1,1 +1,128 @@
 <app-header></app-header>
+<div class="main-content">
+  <div class="sidemenu">
+    <ul>
+      <li>
+        <mat-icon>work_outline</mat-icon>
+        <a routerLink="/jobs">My Jobs</a>
+      </li>
+      <li>
+        <mat-icon>home</mat-icon>
+        <a routerLink="/home">Home</a>
+      </li>
+      <li>
+        <mat-icon>notifications</mat-icon>
+        <a routerLink="/notifications">Notifications</a>
+      </li>
+      <li>
+        <mat-icon>message</mat-icon>
+        <a routerLink="/messaging">Messaging</a>
+      </li>
+      <li>
+        <mat-icon>description</mat-icon>
+        <a routerLink="/proposals">My Proposals</a>
+      </li>
+      <li>
+        <mat-icon>favorite</mat-icon>
+        <a routerLink="/proposals">My Favorites</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="primary-content">
+    <div class="suggested-jobs">
+      <div class="jobs">
+        <h3 style="text-align: center">Job Details</h3>
+        <div class="job">
+          <h4>{{ job.title }}</h4>
+          <div class="time">
+            <div>
+              <span>{{ job.postedin }}</span>
+              <span style="color: #148aaa"> Open</span>
+            </div>
+
+            <mat-icon color="primary">bookmark</mat-icon>
+          </div>
+          <div
+            style="
+              background: #131524;
+              width: 100%;
+              min-height: 70px;
+              margin: auto;
+              border-radius: 20px;
+            "
+          >
+            <p style="padding: 20px">{{ job.desc }}</p>
+          </div>
+
+          <div class="cards">
+            <div class="budget">
+              <img src="../../assets/hourl-rate.svg" alt="" />
+
+              <div>
+                <h5>2500$</h5>
+                <p>Budget</p>
+              </div>
+            </div>
+            <div class="budget">
+              <img src="../../assets/experlvl.svg" alt="" />
+
+              <div>
+                <h5>Professional</h5>
+                <p>Experience Level</p>
+              </div>
+            </div>
+            <div class="budget">
+              <img src="../../assets/check.svg" alt="" />
+
+              <div>
+                <h5>Master Card</h5>
+                <p>Payment type</p>
+              </div>
+            </div>
+            <div class="budget">
+              <img src="../../assets/hourly_worked.svg" alt="" />
+
+              <div>
+                <h5>30</h5>
+                <p>Duration (Days)</p>
+              </div>
+            </div>
+          </div>
+          <h4 style="padding-top: 10px">Expertise and Skills</h4>
+          <div class="skills">
+            <span *ngFor="let skill of job.requiredskills">{{ skill }}</span>
+          </div>
+
+          <h4>activity on this job</h4>
+          <div class="activities">
+            <div>
+              <h6>Proposals:</h6>
+              <p>less than 5</p>
+            </div>
+            <div>
+              <h6>Interviewing:</h6>
+              <p>0</p>
+            </div>
+          </div>
+
+          <div class="payment-location">
+            <span>
+              <mat-icon>check</mat-icon>
+              Payment Verified
+            </span>
+            <span>
+              <mat-icon>location_on</mat-icon>
+              {{ job.location }}</span
+            >
+          </div>
+          <div class="submit-proposal">
+            <div class="submit-btn">
+              <button>Submit Proposal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

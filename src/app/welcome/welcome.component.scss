@@ -1,10 +1,11 @@
 .navbar {
-    position: fixed;
-    width: 100%;
+    // position: fixed;
+    width: 80%;
     background-color: #131524;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: auto;
 
     .logo {
         display: flex;
@@ -54,7 +55,7 @@
             display: flex;
 
             div {
-                padding: 10px;
+                padding: 5px;
 
                 mat-icon {
                     color: #bebebe;
@@ -81,13 +82,13 @@ mat-icon {
 
 
 .main-content {
-    width: 160vh;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
 
     @media(max-width:768px) {
-        padding-top: 120px;
+        // padding-top: 120px;
         flex-direction: column;
     }
 
@@ -100,7 +101,7 @@ mat-icon {
         color: #5075d5;
 
         button {
-            width: 30%;
+            width: 200px;
             height: 40px;
             background: #14a800;
             color: #fff;
@@ -117,15 +118,21 @@ mat-icon {
     .cover {
         padding: 10px;
 
+        padding-top: 50px;
+
         img {
             width: 400px;
+
             margin: auto;
-            border-radius: 50%;
+            // border-radius: 50%;
         }
     }
 }
 
 .btns {
+    width: 80%;
+    margin: auto;
+
     button:nth-child(1) {
         margin: 20px;
         width: 250px;
@@ -162,7 +169,7 @@ mat-icon {
         }
     }
 
-    text-align: center;
+    // text-align: center;
 }
 
 footer {

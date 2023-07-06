@@ -10,6 +10,7 @@ export class JobComponent {
 
 
   job_id: any
+  job: any = {}
   jobs: any = []
   constructor(
 
@@ -22,12 +23,15 @@ export class JobComponent {
 
 
   get_job() {
+    this.jobs = localStorage.getItem('Jobs');
+    let jobs = JSON.parse(this.jobs)
 
-
-    for (let job in this.jobs) {
-      console.log(job);
-
+    for (let job of jobs) {
+      if (job.id == this.job_id) {
+        this.job = job
+      }
 
     }
+    console.log(this.job);
   }
 }

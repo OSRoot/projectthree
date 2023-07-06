@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class JobsComponent {
 
-  constructor() {
+  constructor(
+
+  ) {
     this.set_data()
   }
 
@@ -52,6 +54,12 @@ export class JobsComponent {
 
   set_data() {
     localStorage.setItem('Jobs', JSON.stringify(this.jobs))
+
+    let jobs: any = localStorage.getItem('Jobs')
+
+    console.log(JSON.parse(jobs));
+
+
   }
 
 }

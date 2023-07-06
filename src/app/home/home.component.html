@@ -45,10 +45,23 @@
               <span style="color: yellowgreen"> Open</span>
             </div>
             <div class="edit-bookmark">
-              <mat-icon color="primary" style="padding-right: 40px"
-                >create</mat-icon
+              <mat-icon
+                (click)="show_serviec_options = !show_serviec_options"
+                color="primary"
+                >more_horiz</mat-icon
               >
-              <mat-icon color="primary">delete</mat-icon>
+            </div>
+
+            <div *ngIf="show_serviec_options" class="options">
+              <button>
+                <mat-icon>create</mat-icon>
+                Edit
+              </button>
+
+              <button>
+                <mat-icon>delete</mat-icon>
+                Delete
+              </button>
             </div>
           </div>
           <p>I need an app that can record and do someting in partuicular</p>

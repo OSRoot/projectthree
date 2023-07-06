@@ -1,19 +1,209 @@
 .main-content {
-    padding-top: 80px;
-    width: 70%;
-    margin: auto;
 
-    .header-title {
-        text-align: center;
+
+    // position: relative;
+    padding: 50px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+
+    // gap: 2%;
+    .sidemenu {
+        @media(max-width:768px) {
+            display: none;
+        }
+
+        position: fixed;
+        width: 20%;
+        height: fit-content;
+
+        background: #292b3a;
+        color: #bebebe;
+        // box-shadow: 0 0 10px #292b3a;
+        border-radius: 10 px;
+        padding: 20px;
+
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: flex;
+                // justify-content: center;
+                align-items: center;
+
+                gap: 10px;
+
+                a {
+                    position: relative;
+                    font-weight: 700;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        top: 100%;
+                        width: 0%;
+                        transition: 0.3s;
+                        height: 1px;
+                        background: #5075D5;
+
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+
+                    text-decoration: none;
+                    color: #bebebe;
+
+                }
+            }
+        }
     }
 
-    .notiification {
-        padding: 20px;
-        width: 100%;
-        background: #292b3a;
+    .primary-content {
+
+        @media(max-width:768px) {
+            width: 100%;
+        }
+
+        margin-left: auto;
+        width: 75%;
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        border-radius: 10px;
+
+        .suggested-jobs {
+
+            flex: 2.5;
+            display: flex;
+            flex-direction: column;
+
+            gap: 10px;
+
+            .notifications {
+                background: #292b3a;
+                padding: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 20px;
+
+                .notification {
+                    display: flex;
+                    background: #131313;
+                    padding: 10px;
+                    border-radius: 30px;
+
+                    .icon {
+                        padding: 10px;
+                    }
+
+                    .notification-content {
+                        display: flex;
+                        padding: 10px;
+                        cursor: pointer;
+                    }
+
+
+                    .icon3 {
+                        // transform: rotate(90deg);
+                        font-weight: 800;
+                        padding: 20px;
+                        transition: 0.2s;
+
+                        &:hover {
+
+                            transform: scale(2);
+
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .right-side {
+            // display: flex;
+            // flex-direction: column;
+            // // width: 200px;
+            align-items: center;
+            flex: 0.8;
+            margin-left: 20px;
+
+
+            .right-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #292b3a;
+                color: #bebebe;
+                // box-shadow: 0 0 10px #292b3a;
+                border-radius: 5px;
+                padding: 20px;
+            }
+        }
+
+    }
+}
+
+.chips {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+
+    span {
+        width: fit-content;
+        display: inline-block;
+        padding: 5px 10px;
+        background: #3e4e86;
+        border-radius: 30px;
+
+        &:hover {
+            background: #5075D5;
+            color: #FFF;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.options {
+    width: 130px;
+    height: 100px;
+    background-color: #131524;
+    position: absolute;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border-radius: 30px;
+
+
+    button {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #5075D5;
+        color: #FFF;
+        margin: 10px;
+
+        height: 40px;
+        width: 100px;
+        margin: auto;
+        border: none;
+        border-radius: 20px;
+        transition: 0.2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }

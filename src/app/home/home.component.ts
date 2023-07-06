@@ -7,10 +7,20 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  show_serviec_options = false;
+  username!: string
 
   constructor() {
     console.log('We are in the Home');
 
   }
 
+
+  show_options() {
+    this.show_serviec_options != this.show_serviec_options
+  }
+
+  get_freelancer() {
+
+  }
 }

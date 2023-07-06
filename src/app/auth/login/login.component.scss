@@ -1,0 +1,186 @@
+.navbar {
+    z-index: 999;
+    // position: fixed;
+    width: 100%;
+    background-color: #131524;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 100px;
+        }
+
+        .searchbar {
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            mat-icon {
+                color: #bebebe;
+                width: 25px;
+                font-size: x-large;
+            }
+
+            input {
+                border-radius: 10px;
+                height: 35px;
+                padding: 10px;
+                outline: 0;
+                color: rgb(39, 35, 35);
+                background: #bebebe;
+            }
+        }
+    }
+
+    .navlinks {
+        nav {
+
+            display: flex;
+
+            div {
+                background: #3e4e86;
+                padding: 5px;
+                margin: 10px;
+                border-radius: 10px;
+                transition: 0.14s;
+
+                &:hover {
+                    transform: scale(1.09);
+                }
+
+                mat-icon {
+                    color: #bebebe;
+                }
+            }
+
+            a {
+                justify-content: center;
+                align-items: center;
+                color: #bebebe;
+                text-decoration: none;
+                padding: 5px;
+                font-weight: 700;
+            }
+
+
+        }
+    }
+}
+
+mat-icon {
+    cursor: pointer;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: calc(70vh);
+    margin: auto;
+
+    .header {
+        // padding: 10px;
+
+        .form {
+            form {
+                h2 {
+                    margin: 0 0 10px 0;
+                }
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .email-input {
+                display: flex;
+                // flex-direction: column;
+                background: #131524;
+                border: 1px solid #3e4e86;
+                width: 400px;
+                height: 50px;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                transition: 0.2s;
+                border-radius: 5px;
+
+                &:hover {
+                    transform: scale(1.02);
+                }
+
+                mat-icon {
+
+                    text-align: center;
+                    width: 50px;
+                }
+
+                input {
+                    background: #131524;
+                    border: none;
+                    width: 350px;
+                    height: 40px;
+                    outline: none;
+                    text-align: left;
+                    color: #bebebe;
+                    padding: 10px;
+                }
+            }
+
+            .login-btn {
+                padding-top: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                button {
+                    border: none;
+                    background: #5075d5;
+                    width: 150px;
+                    height: 40px;
+                    transition: 0.1s;
+                    color: #fff;
+                    border-radius: 5px;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        color: #bebebe;
+                    }
+
+                }
+            }
+        }
+
+        .forgot-pass {
+            // padding: 15px;
+            display: flex;
+            margin-top: 20px;
+            // width: 300px;
+            // margin: auto;
+            background: #292b3a;
+            border-radius: 5px;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+
+            p {
+                text-align: center;
+                margin: auto;
+
+            }
+
+            a {
+                text-decoration: none;
+                padding-right: 30px;
+            }
+        }
+    }
+}

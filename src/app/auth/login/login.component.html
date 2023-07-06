@@ -1,0 +1,68 @@
+<div class="navbar">
+  <div class="logo">
+    <img
+      class="logo"
+      style="cursor: pointer; width: 100px"
+      src="../../../assets/logo.png"
+      routerLink="/home"
+    />
+
+    <!-- <div class="searchbar">
+      <mat-icon style="cursor: pointer">search</mat-icon>
+      <input type="text" placeholder="Search" />
+    </div> -->
+  </div>
+
+  <div class="navlinks">
+    <nav>
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon routerLink="/home">home</mat-icon>
+        <a routerLink="/home"> Home </a>
+      </div>
+
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon routerLink="/choose">person</mat-icon>
+        <a routerLink="/choose"> Sign Up </a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div class="main-content">
+  <div class="header">
+    <h2 style="margin-bottom: 20px; padding: 0">Login to Jobful</h2>
+    <div class="form">
+      <form [formGroup]="loginForm" action="">
+        <label style="color: #5075d5; font-weight: bold" for="email"
+          >Email</label
+        >
+        <div class="email-input">
+          <mat-icon>email</mat-icon>
+          <input id="email" type="text" placeholder="Enter you email address" />
+        </div>
+        <label style="color: #5075d5; font-weight: bold" for="password"
+          >Password</label
+        >
+        <div class="email-input">
+          <mat-icon>password</mat-icon>
+          <input id="password" type="password" placeholder="Enter password" />
+        </div>
+
+        <div class="login-btn">
+          <button type="submit">Login</button>
+        </div>
+      </form>
+
+      <div class="forgot-pass">
+        <p>Forgot password?</p>
+        <a href="">Reset Password</a>
+      </div>
+    </div>
+  </div>
+</div>

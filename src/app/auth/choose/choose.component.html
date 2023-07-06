@@ -1,0 +1,71 @@
+<div class="navbar">
+  <div class="logo">
+    <img
+      class="logo"
+      style="cursor: pointer; width: 100px"
+      src="../../../assets/logo.png"
+      routerLink="/home"
+    />
+  </div>
+
+  <div class="navlinks">
+    <nav>
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon routerLink="/home">home</mat-icon>
+        <a routerLink="/home"> Home </a>
+      </div>
+
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon routerLink="/login">person</mat-icon>
+        <a routerLink="/login"> Login </a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div class="main-content" id="main">
+  <h2>Join as a client or freelancer</h2>
+  <div class="choices">
+    <div class="choice-client">
+      <label for="client">
+        <mat-icon>badge</mat-icon>
+        <input
+          name="choices"
+          type="radio"
+          id="client"
+          (change)="make_choice($event)"
+          value="client"
+        />
+        <h4>I’m a client, hiring for a project</h4>
+      </label>
+    </div>
+    <div class="choice-freelancer">
+      <label for="freelancer">
+        <mat-icon>person_pin</mat-icon>
+        <input
+          name="choices"
+          type="radio"
+          id="freelancer"
+          (change)="make_choice($event)"
+          value="freelancer"
+        />
+        <h4>I’m a freelancer, looking for work</h4>
+      </label>
+    </div>
+  </div>
+
+  <button
+    [style.background-color]="active ? '#5075d5' : 'gray'"
+    [disabled]="!choice"
+  >
+    Join as {{ choice }}
+  </button>
+
+  <p>Already have an account? <a routerLink="/login">Log In</a></p>
+</div>

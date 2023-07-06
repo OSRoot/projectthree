@@ -1,0 +1,117 @@
+<div class="navbar">
+  <div class="logo">
+    <img
+      class="logo"
+      style="cursor: pointer; width: 100px"
+      src="../../../assets/logo.png"
+      routerLink="/home"
+    />
+
+    <!-- <div class="searchbar">
+        <mat-icon style="cursor: pointer">search</mat-icon>
+        <input type="text" placeholder="Search" />
+      </div> -->
+  </div>
+
+  <div class="navlinks">
+    <nav>
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon routerLink="/home">home</mat-icon>
+        <a routerLink="/home"> Home </a>
+      </div>
+
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon routerLink="/login">login</mat-icon>
+        <a routerLink="/login"> Login </a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div class="main-content">
+  <div class="header">
+    <h2 style="padding: 5px">Join Jobful Now</h2>
+    <div class="form">
+      <form [formGroup]="signup_form">
+        <label style="color: #5075d5; font-weight: bold" for="username"
+          >Username</label
+        >
+        <div class="email-input">
+          <mat-icon>person</mat-icon>
+          <input
+            [(ngModel)]="username"
+            formControlName="username"
+            id="username"
+            type="text"
+            placeholder="Enter username"
+          />
+        </div>
+        <label style="color: #5075d5; font-weight: bold" for="firstname"
+          >First Name</label
+        >
+        <div class="email-input">
+          <mat-icon>person</mat-icon>
+          <input
+            [(ngModel)]="firstname"
+            formControlName="firstname"
+            id="firstname"
+            type="text"
+            placeholder="Enter Firstname"
+          />
+        </div>
+        <label style="color: #5075d5; font-weight: bold" for="lastname"
+          >Last Name</label
+        >
+        <div class="email-input">
+          <mat-icon>person</mat-icon>
+          <input
+            [(ngModel)]="lastname"
+            formControlName="lastname"
+            id="lastname"
+            type="text"
+            placeholder="Enter Lastname"
+          />
+        </div>
+
+        <label style="color: #5075d5; font-weight: bold" for="email"
+          >Email address</label
+        >
+        <div class="email-input">
+          <mat-icon>email</mat-icon>
+          <input
+            [(ngModel)]="email"
+            formControlName="email"
+            id="email"
+            type="email"
+            placeholder="Enter Your email"
+            required
+          />
+        </div>
+
+        <label style="color: #5075d5; font-weight: bold" for="password"
+          >Password</label
+        >
+        <div class="email-input">
+          <mat-icon>password</mat-icon>
+          <input
+            [(ngModel)]="password"
+            formControlName="password"
+            id="password"
+            type="password"
+            placeholder="Enter password"
+          />
+        </div>
+
+        <div class="login-btn">
+          <button (click)="logger()">Rigster</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
