@@ -1,0 +1,120 @@
+<div class="navbar">
+  <div class="logo">
+    <img
+      class="logo"
+      style="cursor: pointer; width: 100px"
+      src="../../../assets/logo.png"
+      routerLink="/home"
+    />
+
+    <!-- <div class="searchbar">
+          <mat-icon style="cursor: pointer">search</mat-icon>
+          <input type="text" placeholder="Search" />
+        </div> -->
+  </div>
+
+  <div class="navlinks">
+    <nav>
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon>person</mat-icon>
+
+        <div class="profile">
+          <div class="icon">
+            <mat-icon>person_pin</mat-icon>
+          </div>
+          <div class="user_role">
+            <h4>Username</h4>
+            <p>Freelancer</p>
+          </div>
+          <div class="settings">
+            <mat-icon>settings</mat-icon>
+            Close account
+          </div>
+
+          <div class="logout">
+            <mat-icon>logout</mat-icon>
+            Log out
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+>
+<div class="main">
+  <div class="left-side">
+    <h2>Let's start with a strong headline.</h2>
+    <p>
+      This helps you job post stand out to the right candidates. <br />
+      it's the first thing they'll see, so make it count
+    </p>
+  </div>
+  <div class="right-side">
+    <div class="input-headline">
+      <label for="headline">
+        <p>Write a headline for you job post</p>
+        <div>
+          <input [(ngModel)]="headline" type="text" />
+        </div>
+      </label>
+    </div>
+
+    <div class="example">
+      <h6>Example titles</h6>
+      <ul>
+        <li>
+          Build responsive WordPress site with booking/payment functionality
+        </li>
+        <li>
+          Build responsive WordPress site with booking/payment functionality
+        </li>
+        <li>
+          Build responsive WordPress site with booking/payment functionality
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="progressbar"></div>
+  <div class="btns">
+    <div>
+      <button routerLink="/create-profile/headline" routerDirection="back">
+        Headline
+      </button>
+
+      <button
+        style="background: #292b3a"
+        routerLink="/create-profile/skills"
+        routerDirection="back"
+      >
+        Skills
+      </button>
+
+      <button
+        style="background: #292b3a"
+        routerLink="/create-profile/scope"
+        routerDirection="back"
+      >
+        Scope
+      </button>
+
+      <button
+        style="background: #292b3a"
+        routerLink="/create-profile/budget"
+        routerDirection="back"
+      >
+        Budget
+      </button>
+    </div>
+    <div class="skip-next">
+      <button (click)="set_headline()" routerLink="/create-profile/skills">
+        Next
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+<div class="navbar">
+  <div class="logo">
+    <img
+      class="logo"
+      style="cursor: pointer; width: 100px"
+      src="../../../assets/logo.png"
+      routerLink="/home"
+    />
+
+    <!-- <div class="searchbar">
+          <mat-icon style="cursor: pointer">search</mat-icon>
+          <input type="text" placeholder="Search" />
+        </div> -->
+  </div>
+
+  <div class="navlinks">
+    <nav>
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon>person</mat-icon>
+
+        <div class="profile">
+          <div class="icon">
+            <mat-icon>person_pin</mat-icon>
+          </div>
+          <div class="user_role">
+            <h4>Username</h4>
+            <p>Freelancer</p>
+          </div>
+          <div class="settings">
+            <mat-icon>settings</mat-icon>
+            Close account
+          </div>
+
+          <div class="logout">
+            <mat-icon>logout</mat-icon>
+            Log out
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+>
+<div class="main">
+  <h2>Got it. Now, add a title to tell the world what you do.</h2>
+  <p>
+    It’s the very first thing clients see, so make it count. Stand out by
+    describing your expertise in your own words. Your professional role
+  </p>
+
+  <div class="title-input">
+    <input
+      [(ngModel)]="title"
+      type="text"
+      placeholder="Ex. Software Engineer"
+    />
+  </div>
+</div>
+
+<div class="footer">
+  <div class="progressbar"></div>
+  <div class="btns">
+    <button routerLink="/create-profile/work-preference">Back</button>
+    <div class="skip-next">
+      <a routerLink="">Skip for now</a>
+      <button
+        style="width: 200px; height: 50px"
+        routerLink="/create-profile/employment"
+        [disabled]="title.length <= 1"
+        (click)="set_title()"
+      >
+        Next, Add your experience
+      </button>
+    </div>
+  </div>
+</div>

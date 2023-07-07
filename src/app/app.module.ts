@@ -25,7 +25,25 @@ import { ServicesComponent } from './client/services/services.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddInfoComponent } from './complete-info/add-info/add-info.component';
 import { AddEduComponent } from './complete-info/add-edu/add-edu.component';
-
+import { VerifyEmailComponent } from './complete-info/verify-email/verify-email.component';
+import { AddExpComponent } from './complete-info/add-exp/add-exp.component';
+import { AddLangComponent } from './complete-info/add-lang/add-lang.component';
+import { AddSkillComponent } from './complete-info/add-skill/add-skill.component';
+import { AddGoalComponent } from './complete-info/add-goal/add-goal.component';
+import { GetStartedComponent } from './complete-info/get-started/get-started.component';
+import { AddTitleComponent } from './complete-info/add-title/add-title.component';
+import { WorkPreferenceComponent } from './complete-info/work-preference/work-preference.component';
+import { AddEmploymentComponent } from './complete-info/add-employment/add-employment.component';
+import { BioComponent } from './complete-info/bio/bio.component';
+import { ToastrModule } from 'ngx-toastr';
+import { HeadlineComponent } from './complete-info/headline/headline.component';
+import { SkillsComponent } from './complete-info/skills/skills.component';
+import { ScopeComponent } from './complete-info/scope/scope.component';
+import { BudgetComponent } from './complete-info/budget/budget.component';
+import { ScopeLvlComponent } from './complete-info/scope-lvl/scope-lvl.component';
+import { RateComponent } from './complete-info/rate/rate.component';
+import { CategoriesComponent } from './complete-info/categories/categories.component';
+import { ProfileComponent } from './complete-info/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +62,24 @@ import { AddEduComponent } from './complete-info/add-edu/add-edu.component';
     ServicesComponent,
     AddInfoComponent,
     AddEduComponent,
+    VerifyEmailComponent,
+    AddExpComponent,
+    AddLangComponent,
+    AddSkillComponent,
+    AddGoalComponent,
+    GetStartedComponent,
+    AddTitleComponent,
+    WorkPreferenceComponent,
+    AddEmploymentComponent,
+    BioComponent,
+    HeadlineComponent,
+    SkillsComponent,
+    ScopeComponent,
+    BudgetComponent,
+    ScopeLvlComponent,
+    RateComponent,
+    CategoriesComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +90,8 @@ import { AddEduComponent } from './complete-info/add-edu/add-edu.component';
     BrowserAnimationsModule,
     MatChipsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ToastrModule.forRoot()
 
   ],
   providers: [],

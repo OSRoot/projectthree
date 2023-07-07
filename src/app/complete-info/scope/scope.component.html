@@ -1,0 +1,125 @@
+<div class="navbar">
+  <div class="logo">
+    <img
+      class="logo"
+      style="cursor: pointer; width: 100px"
+      src="../../../assets/logo.png"
+      routerLink="/home"
+    />
+
+    <!-- <div class="searchbar">
+            <mat-icon style="cursor: pointer">search</mat-icon>
+            <input type="text" placeholder="Search" />
+          </div> -->
+  </div>
+
+  <div class="navlinks">
+    <nav>
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon>person</mat-icon>
+
+        <div class="profile">
+          <div class="icon">
+            <mat-icon>person_pin</mat-icon>
+          </div>
+          <div class="user_role">
+            <h4>Username</h4>
+            <p>Freelancer</p>
+          </div>
+          <div class="settings">
+            <mat-icon>settings</mat-icon>
+            Close account
+          </div>
+
+          <div class="logout">
+            <mat-icon>logout</mat-icon>
+            Log out
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+>
+<div class="main">
+  <div class="left-side">
+    <h2>Next, estimate the scope of your work.</h2>
+    <p>Consider the size of your and the time it will take.</p>
+  </div>
+  <div class="right-side">
+    <div class="selections">
+      <div class="selection">
+        <div class="input-radio">
+          <label for="large">Large</label>
+          <input name="selections" type="radio" id="large" value="large" />
+        </div>
+        <div id="large" class="text">
+          <p id="large">
+            Longer term or complex initiative (ex. design and build a full app)
+          </p>
+        </div>
+      </div>
+
+      <div class="selection">
+        <div class="input-radio">
+          <label for="medium">Medium</label>
+          <input name="selections" type="radio" id="medium" value="medium" />
+        </div>
+        <div id="medium" class="text">
+          <p id="medium">Well-defined projects (ex. a landing page)</p>
+        </div>
+      </div>
+
+      <div class="selection">
+        <div class="input-radio">
+          <label for="small">Small</label>
+          <input name="selections" type="radio" id="small" value="small" />
+        </div>
+        <div id="" class="text">
+          <p id="small">Quick tasks (ex. update text and image on a webpage)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="progressbar"></div>
+  <div class="btns">
+    <div>
+      <button
+        style="background: #292b3a"
+        routerLink="/create-profile/headline"
+        routerDirection="back"
+      >
+        Headline
+      </button>
+
+      <button
+        style="background: #292b3a"
+        routerLink="/create-profile/skills"
+        routerDirection="back"
+      >
+        Skills
+      </button>
+
+      <button routerLink="/create-profile/scope" routerDirection="back">
+        Scope
+      </button>
+
+      <button
+        style="background: #292b3a"
+        routerLink="/create-profile/budget"
+        routerDirection="back"
+      >
+        Budget
+      </button>
+    </div>
+    <div class="skip-next">
+      <button routerLink="/create-profile/budget">Next</button>
+    </div>
+  </div>
+</div>

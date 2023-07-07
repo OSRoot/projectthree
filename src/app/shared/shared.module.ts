@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
+import { HeaderworkComponent } from './headerwork/headerwork.component';
 
 
 
@@ -13,7 +14,8 @@ import { SidemenuComponent } from './sidemenu/sidemenu.component';
   declarations: [
     SearcherComponent,
     HeaderComponent,
-    SidemenuComponent
+    SidemenuComponent,
+    HeaderworkComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,7 @@ import { SidemenuComponent } from './sidemenu/sidemenu.component';
     MatIconModule
   ],
   exports: [
-    HeaderComponent, SearcherComponent, SidemenuComponent
+    HeaderComponent, SearcherComponent, SidemenuComponent, HeaderworkComponent
   ]
 })
 export class SharedModule { }

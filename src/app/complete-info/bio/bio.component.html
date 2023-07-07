@@ -1,0 +1,82 @@
+<div class="navbar">
+  <div class="logo">
+    <img
+      class="logo"
+      style="cursor: pointer; width: 100px"
+      src="../../../assets/logo.png"
+      routerLink="/home"
+    />
+
+    <!-- <div class="searchbar">
+              <mat-icon style="cursor: pointer">search</mat-icon>
+              <input type="text" placeholder="Search" />
+            </div> -->
+  </div>
+
+  <div class="navlinks">
+    <nav>
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon>person</mat-icon>
+
+        <div class="profile">
+          <div class="icon">
+            <mat-icon>person_pin</mat-icon>
+          </div>
+          <div class="user_role">
+            <h4>Username</h4>
+            <p>Freelancer</p>
+          </div>
+          <div class="settings">
+            <mat-icon>settings</mat-icon>
+            Close account
+          </div>
+
+          <div class="logout">
+            <mat-icon>logout</mat-icon>
+            Log out
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+>
+<div class="main">
+  <h2>Great! Now write a bio to tell the world about yourself.</h2>
+  <p>
+    Help people get to know you at a glance. What work are you best at? Tell
+    them clearly, using paragraphs or bullet points. You can always edit later -
+    just make sure you proofread now!
+  </p>
+  <div class="textarea" style="width: 60%; margin: auto">
+    <label for="overview" style="display: flex; flex-direction: column"
+      >Your overview
+      <textarea
+        style="background: #131524; outline: none; color: #fff"
+        name="overview"
+        id="overview"
+        cols="60"
+        rows="5"
+        placeholder="Enter your top skills, experiences, and interests. This is one of the first things clients will see on your profile."
+      ></textarea>
+    </label>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="progressbar"></div>
+  <div class="btns">
+    <button routerLink="/create-profile/skills">Back</button>
+    <div class="skip-next">
+      <button
+        style="width: 200px; height: 50px"
+        routerLink="/create-profile/rate"
+      >
+        Next, set you rate
+      </button>
+    </div>
+  </div>
+</div>

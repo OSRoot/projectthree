@@ -79,9 +79,9 @@
           />
         </div>
 
-        <label style="color: #5075d5; font-weight: bold" for="email"
-          >Email address</label
-        >
+        <label style="color: #5075d5; font-weight: bold" for="email">{{
+          email_word
+        }}</label>
         <div class="email-input">
           <mat-icon>email</mat-icon>
           <input
@@ -109,7 +109,7 @@
         </div>
 
         <div class="login-btn">
-          <button (click)="logger()">Rigster</button>
+          <button (click)="if_freeelancer()">Rigster</button>
         </div>
       </form>
     </div>

@@ -1,0 +1,118 @@
+<div class="navbar">
+  <div class="logo">
+    <img
+      class="logo"
+      style="cursor: pointer; width: 100px"
+      src="../../../assets/logo.png"
+      routerLink="/home"
+    />
+
+    <!-- <div class="searchbar">
+            <mat-icon style="cursor: pointer">search</mat-icon>
+            <input type="text" placeholder="Search" />
+          </div> -->
+  </div>
+
+  <div class="navlinks">
+    <nav>
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon>person</mat-icon>
+
+        <div class="profile">
+          <div class="icon">
+            <mat-icon>person_pin</mat-icon>
+          </div>
+          <div class="user_role">
+            <h4>Username</h4>
+            <p>Freelancer</p>
+          </div>
+          <div class="settings">
+            <mat-icon>settings</mat-icon>
+            Close account
+          </div>
+
+          <div class="logout">
+            <mat-icon>logout</mat-icon>
+            Log out
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+>
+<div class="main">
+  <div class="left-side">
+    <h2>What are the main skills required for your work?</h2>
+  </div>
+  <div class="right-side">
+    <div class="input-headline">
+      <label for="headline">
+        <p>Search skills or add your own</p>
+        <div class="icon-input">
+          <mat-icon>search</mat-icon>
+          <input type="text" />
+        </div>
+      </label>
+    </div>
+
+    <div class="example">
+      <h6>Popular Skills</h6>
+      <div class="chips">
+        <div class="chip" *ngFor="let skill of skills">
+          <label for="{{ skill }}"
+            >{{ skill }}
+            <input
+              (change)="logger($event)"
+              id="{{ skill }}"
+              value="{{ skill }}"
+              type="checkbox"
+            />
+            <mat-icon id="{{ skill }}">add</mat-icon>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="progressbar"></div>
+  <div class="btns">
+    <div>
+      <button
+        style="background: #292b3a"
+        routerLink="/create-profile/headline"
+        routerDirection="back"
+      >
+        Headline
+      </button>
+
+      <button routerLink="/create-profile/skills" routerDirection="back">
+        Skills
+      </button>
+
+      <button
+        style="background: #292b3a"
+        routerLink="/create-profile/scope"
+        routerDirection="back"
+      >
+        Scope
+      </button>
+
+      <button
+        style="background: #292b3a"
+        routerLink="/create-profile/budget"
+        routerDirection="back"
+      >
+        Budget
+      </button>
+    </div>
+    <div class="skip-next">
+      <button routerLink="/create-profile/scope">Next</button>
+    </div>
+  </div>
+</div>

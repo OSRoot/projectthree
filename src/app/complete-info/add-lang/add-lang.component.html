@@ -1,0 +1,107 @@
+<div class="navbar">
+  <div class="logo">
+    <img
+      class="logo"
+      style="cursor: pointer; width: 100px"
+      src="../../../assets/logo.png"
+      routerLink="/home"
+    />
+
+    <!-- <div class="searchbar">
+            <mat-icon style="cursor: pointer">search</mat-icon>
+            <input type="text" placeholder="Search" />
+          </div> -->
+  </div>
+
+  <div class="navlinks">
+    <nav>
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon>person</mat-icon>
+
+        <div class="profile">
+          <div class="icon">
+            <mat-icon>person_pin</mat-icon>
+          </div>
+          <div class="user_role">
+            <h4>Username</h4>
+            <p>Freelancer</p>
+          </div>
+          <div class="settings">
+            <mat-icon>settings</mat-icon>
+            Close account
+          </div>
+
+          <div class="logout">
+            <mat-icon>logout</mat-icon>
+            Log out
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+>
+<div class="main">
+  <h2>Looking good. Next, tell us which languages you speak.</h2>
+  <p>
+    Upwork is global, so clients are often interested to know what languages you
+    speak. English is a must, but do you speak any other languages?
+  </p>
+
+  <div class="langs">
+    <div>
+      <div class="select-lang">
+        <label for="lang"
+          >Add Language
+
+          <select name="languages">
+            <option selected>Add language</option>
+            <option value="english">English</option>
+            <option value="French">Arabic</option>
+            <option value="French">French</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="select-level">
+        <label for="lvl">
+          Proficiency
+          <select>
+            <option selected>Language Level</option>
+            <option value="good">Good</option>
+            <option value="advanced">Advanced</option>
+            <option value="fluent">Fluent</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="mylangs">
+      <div class="cards">
+        <div class="card">
+          <h4>Language: English</h4>
+          <p>Level: Advanced</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="progressbar"></div>
+  <div class="btns">
+    <button routerLink="/create-profile/education">Back</button>
+    <div class="skip-next">
+      <a routerLink=""> Skip for now</a>
+      <button
+        style="width: 200px; height: 50px"
+        routerLink="/create-profile/add-skills"
+      >
+        Next, add your skills
+      </button>
+    </div>
+  </div>
+</div>

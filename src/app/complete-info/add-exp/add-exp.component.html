@@ -1,0 +1,115 @@
+<div class="navbar">
+  <div class="logo">
+    <img
+      class="logo"
+      style="cursor: pointer; width: 100px"
+      src="../../../assets/logo.png"
+      routerLink="/home"
+    />
+
+    <!-- <div class="searchbar">
+        <mat-icon style="cursor: pointer">search</mat-icon>
+        <input type="text" placeholder="Search" />
+      </div> -->
+  </div>
+
+  <div class="navlinks">
+    <nav>
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon>person</mat-icon>
+
+        <div class="profile">
+          <div class="icon">
+            <mat-icon>person_pin</mat-icon>
+          </div>
+          <div class="user_role">
+            <h4>Username</h4>
+            <p>Freelancer</p>
+          </div>
+          <div class="settings">
+            <mat-icon>settings</mat-icon>
+            Close account
+          </div>
+
+          <div class="logout">
+            <mat-icon>logout</mat-icon>
+            Log out
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+>
+<div class="main">
+  <h2>A few quick questions: first, have you freelanced before?</h2>
+  <p>
+    This lets us know how much help to give you along the way. We won’t share
+    your answer with anyone else, including potential clients.
+  </p>
+
+  <div class="choices">
+    <div class="choice-client">
+      <label for="new">
+        <mat-icon>badge</mat-icon>
+        <input
+          (change)="check_choice($event)"
+          name="choices"
+          type="radio"
+          id="new"
+          value="new"
+          [checked]=""
+        />
+        <h4>I am brand new to this</h4>
+      </label>
+    </div>
+
+    <div class="choice-client">
+      <label for="experienced">
+        <mat-icon>badge</mat-icon>
+        <input
+          (change)="check_choice($event)"
+          name="choices"
+          type="radio"
+          id="experienced"
+          value="experienced"
+          [checked]=""
+        />
+        <h4>I have some experience</h4>
+      </label>
+    </div>
+
+    <div class="choice-client">
+      <label for="expert">
+        <mat-icon>badge</mat-icon>
+        <input
+          (change)="check_choice($event)"
+          name="choices"
+          type="radio"
+          id="expert"
+          value="expert"
+          [checked]=""
+        />
+        <h4>I am an expert</h4>
+      </label>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="progressbar"></div>
+  <div class="btns">
+    <button routerLink="/create-profile/welcome" routerDirection="back">
+      Back
+    </button>
+    <div class="skip-next">
+      <a routerLink="/create-profile/title">Skip for now</a>
+      <button [disabled]="!checked" routerLink="/create-profile/goal">
+        Next
+      </button>
+    </div>
+  </div>
+</div>

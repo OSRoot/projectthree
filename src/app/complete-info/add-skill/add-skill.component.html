@@ -1,0 +1,79 @@
+<div class="navbar">
+  <div class="logo">
+    <img
+      class="logo"
+      style="cursor: pointer; width: 100px"
+      src="../../../assets/logo.png"
+      routerLink="/home"
+    />
+
+    <!-- <div class="searchbar">
+            <mat-icon style="cursor: pointer">search</mat-icon>
+            <input type="text" placeholder="Search" />
+          </div> -->
+  </div>
+
+  <div class="navlinks">
+    <nav>
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon>person</mat-icon>
+
+        <div class="profile">
+          <div class="icon">
+            <mat-icon>person_pin</mat-icon>
+          </div>
+          <div class="user_role">
+            <h4>Username</h4>
+            <p>Freelancer</p>
+          </div>
+          <div class="settings">
+            <mat-icon>settings</mat-icon>
+            Close account
+          </div>
+
+          <div class="logout">
+            <mat-icon>logout</mat-icon>
+            Log out
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+>
+<div class="main">
+  <h2>Nearly there! What work are you here to do?</h2>
+  <p>
+    Your skills show clients what you can offer, and help us choose which jobs
+    to recommend to you. Add or remove the ones we’ve suggested, or start typing
+    to pick more. It’s up to you.
+  </p>
+  <div class="input-headline">
+    <label for="headline">
+      <p>Search skills or add your own</p>
+      <div class="icon-input">
+        <mat-icon>search</mat-icon>
+        <input type="text" />
+      </div>
+    </label>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="progressbar"></div>
+  <div class="btns">
+    <button routerLink="/create-profile/languages">Back</button>
+    <div class="skip-next">
+      <a routerLink=""> Skip for now</a>
+      <button
+        style="width: 200px; height: 50px"
+        routerLink="/create-profile/bio"
+      >
+        Next, add your Bio
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,101 @@
+<div class="navbar">
+  <div class="logo">
+    <img
+      class="logo"
+      style="cursor: pointer; width: 100px"
+      src="../../../assets/logo.png"
+      routerLink="/home"
+    />
+
+    <!-- <div class="searchbar">
+          <mat-icon style="cursor: pointer">search</mat-icon>
+          <input type="text" placeholder="Search" />
+        </div> -->
+  </div>
+
+  <div class="navlinks">
+    <nav>
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon>person</mat-icon>
+
+        <div class="profile">
+          <div class="icon">
+            <mat-icon>person_pin</mat-icon>
+          </div>
+          <div class="user_role">
+            <h4>Username</h4>
+            <p>Freelancer</p>
+          </div>
+          <div class="settings">
+            <mat-icon>settings</mat-icon>
+            Close account
+          </div>
+
+          <div class="logout">
+            <mat-icon>logout</mat-icon>
+            Log out
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div class="main">
+  <h2>Got it. What’s your biggest goal for freelancing?</h2>
+  <p>
+    Different people come to Jobful for various reasons. We want to highlight
+    the opportunities that fit your goals best while still showing you all the
+    possibilities.
+  </p>
+
+  <div class="choices">
+    <div class="choice-client">
+      <label for="income">
+        <mat-icon>badge</mat-icon>
+        <input name="choices" type="radio" id="income" />
+        <h5>To earn my main income</h5>
+      </label>
+    </div>
+
+    <div class="choice-client">
+      <label for="make-money">
+        <mat-icon>badge</mat-icon>
+        <input name="choices" type="radio" id="make-money" />
+        <h5>To make money on the side</h5>
+      </label>
+    </div>
+
+    <div class="choice-client">
+      <label for="experience">
+        <mat-icon>badge</mat-icon>
+        <input name="choices" type="radio" id="experience" />
+        <h5>To get experience, for a full-time job</h5>
+      </label>
+    </div>
+
+    <div class="choice-client">
+      <label for="no-goal">
+        <mat-icon>badge</mat-icon>
+        <input name="choices" type="radio" id="no-goal" />
+        <h5>I don't have a goal in mind yet</h5>
+      </label>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="progressbar"></div>
+  <div class="btns">
+    <button routerLink="/create-profile/experience" routerDirection="back">
+      Back
+    </button>
+    <div class="skip-next">
+      <a routerLink="/create-profile/title">Skip for now</a>
+      <button routerLink="/create-profile/work-preference">Next</button>
+    </div>
+  </div>
+</div>

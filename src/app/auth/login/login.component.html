@@ -44,24 +44,36 @@
         >
         <div class="email-input">
           <mat-icon>email</mat-icon>
-          <input id="email" type="text" placeholder="Enter you email address" />
+          <input
+            [(ngModel)]="email"
+            formControlName="email"
+            id="email"
+            type="text"
+            placeholder="Enter you email address"
+          />
         </div>
         <label style="color: #5075d5; font-weight: bold" for="password"
           >Password</label
         >
         <div class="email-input">
           <mat-icon>password</mat-icon>
-          <input id="password" type="password" placeholder="Enter password" />
+          <input
+            [(ngModel)]="password"
+            formControlName="password"
+            id="password"
+            type="password"
+            placeholder="Enter password"
+          />
         </div>
 
         <div class="login-btn">
-          <button type="submit">Login</button>
+          <button type="submit" [disabled]="loginForm.invalid">Login</button>
         </div>
       </form>
 
       <div class="forgot-pass">
         <p>Forgot password?</p>
-        <a href="">Reset Password</a>
+        <a routerLink="/reset-password">Reset Password</a>
       </div>
     </div>
   </div>
