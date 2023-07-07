@@ -1,1 +1,108 @@
-<p>profile works!</p>
+<div class="navbar">
+  <div class="logo">
+    <img
+      class="logo"
+      style="cursor: pointer; width: 100px"
+      src="../../../assets/logo.png"
+      routerLink="/home"
+    />
+
+    <!-- <div class="searchbar">
+                  <mat-icon style="cursor: pointer">search</mat-icon>
+                  <input type="text" placeholder="Search" />
+                </div> -->
+  </div>
+
+  <div class="navlinks">
+    <nav>
+      <div
+        style="display: flex; align-items: center; justify-content: center"
+        class=""
+      >
+        <mat-icon>person</mat-icon>
+
+        <div class="profile">
+          <div class="icon">
+            <mat-icon>person_pin</mat-icon>
+          </div>
+          <div class="user_role">
+            <h4>Username</h4>
+            <p>Freelancer</p>
+          </div>
+          <div class="settings">
+            <mat-icon>settings</mat-icon>
+            Close account
+          </div>
+
+          <div class="logout">
+            <mat-icon>logout</mat-icon>
+            Log out
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+>
+<div class="main">
+  <h4>A few last details, then you can check and publish your profile.</h4>
+  <p>
+    A professional photo helps you build trust with your clients. To keep things
+    safe and simple, they’ll pay you through us - which is why we need your
+    personal information.
+  </p>
+
+  <div class="profile">
+    <div class="left-side">
+      <div class="img">
+        <img src="../../../assets/jobful.png" alt="" />
+      </div>
+      <div class="uplaod">
+        <label id="upload" for="uplaod">
+          <input style="display: none" id="uplaod" type="file" />
+          <mat-icon>add</mat-icon>
+          Upload Picture
+        </label>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="country">
+        <label for="country">Country</label>
+        <select name="" id="">
+          <option value="" hidden>select country</option>
+          <option value="Egypt">Egypt</option>
+          <option value="Saudi Arabia">Saudi Arabia</option>
+          <option value="Emirates">UAE</option>
+          <option value="England">England</option>
+        </select>
+      </div>
+
+      <div class="city">
+        <label for="city">City</label>
+        <input type="text" placeholder="ex. Mansoura" />
+      </div>
+
+      <div class="street">
+        <label for="street">Street</label>
+        <input type="text" placeholder="ex. Stree no 70" />
+      </div>
+
+      <div class="phone">
+        <label for="phone">Phone</label>
+        <input type="text" placeholder="ex. 012xxxxxxxx" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="progressbar"></div>
+  <div class="btns">
+    <button routerLink="/create-profile/skills">Back</button>
+    <div class="skip-next">
+      <button style="width: 200px; height: 50px" routerLink="/freelancer">
+        Submit Profile
+      </button>
+    </div>
+  </div>
+</div>

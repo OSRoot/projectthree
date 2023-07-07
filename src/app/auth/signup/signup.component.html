@@ -109,7 +109,12 @@
         </div>
 
         <div class="login-btn">
-          <button (click)="if_freeelancer()">Rigster</button>
+          <button
+            [disabled]="signup_form.invalid"
+            (click)="signup_freelancer()"
+          >
+            Rigster
+          </button>
         </div>
       </form>
     </div>

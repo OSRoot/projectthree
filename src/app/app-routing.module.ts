@@ -30,6 +30,7 @@ import { SkillsComponent } from './complete-info/skills/skills.component';
 import { ScopeComponent } from './complete-info/scope/scope.component';
 import { BudgetComponent } from './complete-info/budget/budget.component';
 import { RateComponent } from './complete-info/rate/rate.component';
+import { ProfileComponent } from './complete-info/profile/profile.component';
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -56,6 +57,7 @@ const routes: Routes = [
   { path: 'create-profile/employment', component: AddEmploymentComponent },
   { path: 'create-profile/bio', component: BioComponent },
   { path: 'create-profile/rate', component: RateComponent },
+  { path: 'create-profile/profile', component: ProfileComponent },
   { path: 'create-profile/headline', component: HeadlineComponent },
   { path: 'create-profile/skills', component: SkillsComponent },
   { path: 'create-profile/scope', component: ScopeComponent },

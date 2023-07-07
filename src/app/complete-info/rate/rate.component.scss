@@ -1,0 +1,277 @@
+.navbar {
+    z-index: 999;
+    // position: fixed;
+    width: 100%;
+    background-color: #131524;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 100px;
+        }
+
+        .searchbar {
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            mat-icon {
+                color: #bebebe;
+                width: 25px;
+                font-size: x-large;
+            }
+
+            input {
+                border-radius: 10px;
+                height: 35px;
+                padding: 10px;
+                outline: 0;
+                color: rgb(39, 35, 35);
+                background: #bebebe;
+            }
+        }
+    }
+
+    .navlinks {
+        nav {
+
+            display: flex;
+
+            >div {
+                position: relative;
+                background: #3e4e86;
+                padding: 5px;
+                margin: 10px;
+                border-radius: 50%;
+                transition: 0.14s;
+                cursor: pointer;
+
+                &:hover {
+                    .profile {
+                        opacity: 1;
+                        visibility: visible;
+                        bottom: -217px;
+
+                    }
+                }
+
+                .profile {
+                    position: absolute;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: 0.3s;
+
+                    left: -158px;
+                    bottom: -230px;
+                    background: #292b3a;
+                    color: #bebebe;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .icon {
+                        text-align: center;
+
+                        mat-icon {
+                            padding-top: 10px;
+                            width: 100px;
+                            height: 70px;
+
+                            font-size: 60px;
+                        }
+                    }
+
+                    .user_role {
+
+                        h4 {
+                            text-align: center;
+                            // font-size: 19px;
+                            padding: 0;
+                            margin: 0;
+                        }
+
+                        p {
+                            color: gray;
+                            text-align: center;
+                            font-size: 15px;
+                            // font-weight: bold;
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+
+                    .settings {
+                        display: flex;
+                        // justify-content: space-between;
+                        align-items: center;
+                        gap: 20px;
+                        padding: 10px;
+                        font-size: 15px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background: #3e4e86;
+                        }
+                    }
+
+                    .logout {
+                        display: flex;
+                        // justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+                        padding: 10px;
+                        font-size: 15px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background: #3e4e86;
+                        }
+                    }
+                }
+
+
+
+                >mat-icon {
+                    &:hover {
+                        transform: scale(1.09);
+                    }
+
+                    cursor: pointer;
+                    color: #bebebe;
+                }
+            }
+
+            a {
+                justify-content: center;
+                align-items: center;
+                color: #bebebe;
+                text-decoration: none;
+                padding: 5px;
+                font-weight: 700;
+            }
+
+
+        }
+    }
+}
+
+.main {
+    padding: 0 100px;
+    color: #bebebe;
+
+    .rate {
+        width: 1000px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .hourlyrate {
+            display: flex;
+            justify-content: space-between;
+
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            input {
+                padding: 0 10px;
+                direction: rtl;
+                border: 1px solid #5075d5;
+                background: #131524;
+                outline: none;
+                color: #fff;
+                border-radius: 10px;
+
+                &:focus {
+                    border: 2px solid #5075d5;
+
+                }
+            }
+        }
+    }
+
+
+}
+
+.footer {
+    position: fixed;
+    // padding: 20px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    // height: 100px;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #292b3a;
+
+    // justify-content: space-between;
+    .progressbar {
+        height: 5px;
+        width: 60%;
+        border-radius: 5px;
+        background-color: #5075d5;
+        animation: animate-progressbar 0.2s 1 linear forwards;
+
+    }
+
+    .btns {
+
+        padding: 20px 30px;
+        // padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            width: 120px;
+            height: 40px;
+            border: none;
+            background: #5075d5;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-radius: 5px;
+
+            &:active {
+                background: #3e4e86;
+            }
+
+        }
+
+        .skip-next {
+            padding: 0 10px;
+
+            a {
+                padding: 0 20px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+@keyframes animate-progressbar {
+    from {
+        width: 60%;
+    }
+
+    to {
+        width: 70%;
+    }
+}

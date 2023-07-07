@@ -44,6 +44,7 @@ import { ScopeLvlComponent } from './complete-info/scope-lvl/scope-lvl.component
 import { RateComponent } from './complete-info/rate/rate.component';
 import { CategoriesComponent } from './complete-info/categories/categories.component';
 import { ProfileComponent } from './complete-info/profile/profile.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -91,7 +92,8 @@ import { ProfileComponent } from './complete-info/profile/profile.component';
     MatChipsModule,
     ReactiveFormsModule,
     FormsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    HttpClientModule,
 
   ],
   providers: [],

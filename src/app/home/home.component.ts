@@ -9,7 +9,7 @@ export class HomeComponent {
 
   show_serviec_options = false;
   username!: string
-
+  is_logged = true
   constructor() {
     console.log('We are in the Home');
 
