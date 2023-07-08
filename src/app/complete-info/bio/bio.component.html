@@ -55,6 +55,7 @@
     <label for="overview" style="display: flex; flex-direction: column"
       >Your overview
       <textarea
+      [(ngModel)]="bio"
         style="background: #131524; outline: none; color: #fff"
         name="overview"
         id="overview"
@@ -69,7 +70,7 @@
 <div class="footer">
   <div class="progressbar"></div>
   <div class="btns">
-    <button routerLink="/create-profile/skills">Back</button>
+    <button routerLink="/create-profile/languages">Back</button>
     <div class="skip-next">
       <button
         style="width: 200px; height: 50px"

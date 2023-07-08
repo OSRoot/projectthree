@@ -12,4 +12,6 @@ export class DataService {
 
 
 
+    set_data(){}
+
 }

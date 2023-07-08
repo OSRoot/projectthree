@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class BioComponent {
 
+  bio!:string;
+
+  constructor(){}
+
+  set_bio(){}
+
 }

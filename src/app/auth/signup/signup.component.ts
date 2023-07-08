@@ -160,6 +160,7 @@ export class SignupComponent implements OnInit {
     let role = localStorage.getItem('roleName');
     this.roleName = JSON.stringify(role)
     this.roleName = this.roleName.substring(1, this.roleName.length - 1)
+    
 
   }
 
@@ -180,14 +181,16 @@ export class SignupComponent implements OnInit {
   // ##################################################################
 
   get_signup_info() {
-    let user: any = localStorage.getItem('user_signed');
-    let u = JSON.parse(user);
-    this.username = u.username
-    this.firstname = u.fName
-    this.lastname = u.lName
-    this.email = u.email
-    this.password = u.password
-
+    if (localStorage.getItem('user_signed')){
+      let user: any = localStorage.getItem('user_signed')||null;
+      let u = JSON.parse(user);
+      this.username = u.username ||null
+      this.firstname = u.fName||null
+      this.lastname = u.lName||null
+      this.email = u.email||null
+      this.password = u.password||null
+     return
+    }
     console.log(this.username);
 
   }

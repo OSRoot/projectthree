@@ -8,9 +8,9 @@
     />
 
     <!-- <div class="searchbar">
-            <mat-icon style="cursor: pointer">search</mat-icon>
-            <input type="text" placeholder="Search" />
-          </div> -->
+                  <mat-icon style="cursor: pointer">search</mat-icon>
+                  <input type="text" placeholder="Search" />
+                </div> -->
   </div>
 
   <div class="navlinks">
@@ -45,45 +45,63 @@
 </div>
 >
 <div class="main">
-  <h2>Looking good. Next, tell us which languages you speak.</h2>
+  <h4>Looking good. Next, tell us which languages you speak.</h4>
   <p>
-    Upwork is global, so clients are often interested to know what languages you
+    Jobful is global, so clients are often interested to know what languages you
     speak. English is a must, but do you speak any other languages?
   </p>
 
-  <div class="langs">
-    <div>
-      <div class="select-lang">
-        <label for="lang"
-          >Add Language
-
-          <select name="languages">
-            <option selected>Add language</option>
-            <option value="english">English</option>
-            <option value="French">Arabic</option>
-            <option value="French">French</option>
-          </select>
+  <div class="profile">
+    <!-- <div class="left-side">
+      <div class="img">
+        <img src="../../../assets/jobful.png" alt="" />
+      </div>
+      <div class="uplaod">
+        <label id="upload" for="uplaod">
+          <input style="display: none" id="uplaod" type="file" />
+          <mat-icon>add</mat-icon>
+          Upload Picture
         </label>
       </div>
-
-      <div class="select-level">
-        <label for="lvl">
-          Proficiency
-          <select>
-            <option selected>Language Level</option>
-            <option value="good">Good</option>
-            <option value="advanced">Advanced</option>
-            <option value="fluent">Fluent</option>
-          </select>
-        </label>
+    </div> -->
+    <div class="right-side">
+      <div class="country">
+        <label for="country">Languages</label>
+        <select name="" id="">
+          <option value="" hidden>Choose languege</option>
+          <option value="arabic">Arabic</option>
+          <option value="english">English</option>
+          <option value="french">French</option>
+          <option value="japanese">Japanese</option>
+        </select>
       </div>
+
+      <div class="country">
+        <label for="country">Proficiency</label>
+        <select name="" id="">
+          <option value="" hidden>Choose Level</option>
+          <option value="good">Good</option>
+          <option value="advanced">Advanced</option>
+          <option value="native">Native</option>
+        </select>
+      </div>
+
+      <div class="country">
+        <button>Add language</button>
+      </div>
+
+
+
+
     </div>
-
-    <div class="mylangs">
-      <div class="cards">
-        <div class="card">
-          <h4>Language: English</h4>
-          <p>Level: Advanced</p>
+    <div class="right-right">
+      <div class="langs">
+        <div class="lang">
+          <h6>Languages</h6>
+          <div>
+            <h5>English</h5>
+            <p>Good</p>
+          </div>
         </div>
       </div>
     </div>
@@ -95,11 +113,7 @@
   <div class="btns">
     <button routerLink="/create-profile/education">Back</button>
     <div class="skip-next">
-      <a routerLink=""> Skip for now</a>
-      <button
-        style="width: 200px; height: 50px"
-        routerLink="/create-profile/add-skills"
-      >
+      <button style="width: 200px; height: 50px" routerLink="/create-profile/add-skills">
         Next, add your skills
       </button>
     </div>

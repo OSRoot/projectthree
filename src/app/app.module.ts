@@ -45,6 +45,8 @@ import { RateComponent } from './complete-info/rate/rate.component';
 import { CategoriesComponent } from './complete-info/categories/categories.component';
 import { ProfileComponent } from './complete-info/profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HubConnection } from '@microsoft/signalr';
+import { SignalrService } from './services/signalr.service';
 
 @NgModule({
   declarations: [

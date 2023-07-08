@@ -16,24 +16,10 @@
       <mat-icon>tune</mat-icon>
     </div>
 
-    <div class="contacts" *ngFor="let contact of contacts">
-      <div class="contact" (click)="activate_contact()">
-        <div class="avatar">
-          <mat-icon>person</mat-icon>
-        </div>
-        <div class="name-message">
-          <h6>{{ contact.Name }}</h6>
-          <p>{{ contact.Message }}</p>
-        </div>
 
-        <div class="time">
-          <p>{{ contact.time }}</p>
-        </div>
-      </div>
-    </div>
   </div>
 
-  <div *ngIf="contact_active" class="message-content">
+  <div  class="message-content">
     <div class="message-header">
       <h5>Osroot From Jobful</h5>
       <mat-icon>more_horiz</mat-icon>
@@ -59,6 +45,7 @@
     <div class="message-field">
       <div class="message-input">
         <textarea
+          [(ngModel)]="message"
           type="text"
           cols="20"
           placeholder="write a message"
@@ -66,7 +53,7 @@
 
         <div class="btns">
           <div class="send-btn">
-            <button>Send</button>
+            <button (click)="sendMessage()">Send</button>
           </div>
         </div>
       </div>
