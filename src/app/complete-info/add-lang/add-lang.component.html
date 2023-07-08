@@ -67,27 +67,23 @@
     <div class="right-side">
       <div class="country">
         <label for="country">Languages</label>
-        <select name="" id="">
-          <option value="" hidden>Choose languege</option>
-          <option value="arabic">Arabic</option>
-          <option value="english">English</option>
-          <option value="french">French</option>
-          <option value="japanese">Japanese</option>
+        <select  name="" id="lang-select" (change)="on_change_lang($event)">
+          <option value="" id="lang-select" hidden>Choose languege</option>
+          <option *ngFor="let lang of all_langs" value="{{lang}}">{{lang}}</option>
         </select>
       </div>
 
       <div class="country">
         <label for="country">Proficiency</label>
-        <select name="" id="">
-          <option value="" hidden>Choose Level</option>
-          <option value="good">Good</option>
-          <option value="advanced">Advanced</option>
-          <option value="native">Native</option>
+        <select name="" id="level-select" (change)="on_change_level($event)">
+          <option value=""  hidden>Choose Level</option>
+          <option  *ngFor="let lvl of levels" value="{{lvl}}">{{lvl}}</option>
+
         </select>
       </div>
 
       <div class="country">
-        <button>Add language</button>
+        <button (click)="add_language()">Add language</button>
       </div>
 
 
@@ -98,9 +94,9 @@
       <div class="langs">
         <div class="lang">
           <h6>Languages</h6>
-          <div>
-            <h5>English</h5>
-            <p>Good</p>
+          <div *ngFor="let lan of languages;let i = index">
+            <h5>{{lan.name}}</h5>
+            <p>{{lan.level}}</p>
           </div>
         </div>
       </div>

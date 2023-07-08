@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AddEmploymentComponent {
 
-
-  show_add_exp = false
+  show_popup = 0;
+  // show_add_exp = false
 
   constructor() { }
 

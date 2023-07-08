@@ -56,9 +56,14 @@
       <p>Search skills or add your own</p>
       <div class="icon-input">
         <mat-icon>search</mat-icon>
-        <input type="text" />
+        <input type="text" [(ngModel)]="inputText" (input)="onInputChange()" />
       </div>
     </label>
+    <div *ngIf="filteredSkills.length > 0" class="filtered-skills">
+      <div *ngFor="let skill of filteredSkills">
+        <button  (click)="addSkill(skill)">{{ skill }}</button>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -67,7 +72,7 @@
   <div class="btns">
     <button routerLink="/create-profile/languages">Back</button>
     <div class="skip-next">
-      
+
       <button
         style="width: 200px; height: 50px"
         routerLink="/create-profile/bio"
