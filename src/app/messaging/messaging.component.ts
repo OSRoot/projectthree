@@ -6,7 +6,7 @@ import { SignalrService } from '../services/signalr.service';
   templateUrl: './messaging.component.html',
   styleUrls: ['./messaging.component.scss']
 })
-export class MessagingComponent implements OnInit  {
+export class MessagingComponent implements OnInit {
   contact_active = false;
   contacts = [
     {
@@ -44,10 +44,10 @@ export class MessagingComponent implements OnInit  {
   }
 
 
- public message!:string;
- public messages!:string[]
+  public message!: string;
+  public messages!: string[]
   constructor(
-    private chat:SignalrService
+    private chat: SignalrService
   ) {
 
     chat.onMessageReceived(message => {

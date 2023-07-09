@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class FreelancerComponent {
 
+
+  skills = [];
+  constructor() {
+    this.get_skills()
+  }
+
+  get_skills() {
+    let sks: any = localStorage.getItem('savedSkills')
+    this.skills = JSON.parse(sks)
+    console.log(this.skills);
+
+  }
+
 }

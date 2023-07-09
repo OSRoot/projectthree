@@ -7,4 +7,40 @@ import { Component } from '@angular/core';
 })
 export class ClientComponent {
 
+  jobs = [
+    {
+      id: 1,
+      title: 'Build App Using React',
+      postedin: '8 days ago',
+      desc: 'I need a java app to make dsfoug and for the record',
+      requiredskills: ['HTML', 'CSS', 'REACT', 'ANGULAR'],
+      location: 'Cairo, Egypt'
+    },
+
+    {
+      id: 2,
+
+      title: 'Build App Using Angular',
+      postedin: '8 days ago',
+      desc: 'I need a java app to make dsfoug and for the record',
+      requiredskills: ['GGG', 'CSS', 'REACT', 'ANGULAR'],
+      location: 'Cairo, Egypt'
+    }, {
+      id: 3,
+
+      title: 'Build App Using JAVA',
+      postedin: '8 days ago',
+      desc: 'I need a java app to make dsfoug and for the record',
+      requiredskills: ['OOO', 'CSS', 'REACT', 'ANGULAR'],
+      location: 'Cairo, Egypt'
+    }, {
+      id: 4,
+
+      title: 'Build App Using Html',
+      postedin: '8 days ago',
+      desc: 'I need a java app to make dsfoug and for the record',
+      requiredskills: ['NNN', 'CSS', 'REACT', 'ANGULAR'],
+      location: 'Cairo, Egypt'
+    },
+  ]
 }
