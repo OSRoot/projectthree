@@ -10,35 +10,35 @@ export class MessagingComponent implements OnInit {
   contact_active = false;
   contacts = [
     {
-      Name: 'Osroot',
-      Message: 'Hello There, This is Osama From Jobful!',
+      Name: 'User',
+      Message: 'Hello There, This is User From Jobful!',
       time: 'now'
     }, {
-      Name: 'Osroot',
-      Message: 'Hello There, This is Osama From Jobful!',
+      Name: 'User',
+      Message: 'Hello There, This is User From Jobful!',
       time: 'now'
     }, {
-      Name: 'Osroot',
-      Message: 'Hello There, This is Osama From Jobful!',
+      Name: 'User',
+      Message: 'Hello There, This is User From Jobful!',
       time: 'now'
     }, {
-      Name: 'Osroot',
-      Message: 'Hello There, This is Osama From Jobful!',
+      Name: 'User',
+      Message: 'Hello There, This is User From Jobful!',
       time: 'now'
     }, {
-      Name: 'Osroot',
-      Message: 'Hello There, This is Osama From Jobful!',
+      Name: 'User',
+      Message: 'Hello There, This is User From Jobful!',
       time: 'now'
     }, {
-      Name: 'Osroot',
-      Message: 'Hello There, This is Osama From Jobful!',
+      Name: 'User',
+      Message: 'Hello There, This is User From Jobful!',
       time: 'now'
     },
   ]
 
   current_contact = {
-    Name: 'Osama Essayed',
-    Message: ['Hello There! This Osroot from Jobful', 'How May I assist you Today?'],
+    Name: 'User',
+    Message: ['Hello There! This User from Jobful', 'How May I assist you Today?'],
     time: 'now'
 
   }

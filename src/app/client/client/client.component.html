@@ -19,7 +19,7 @@
           <img src="../../../assets/add.svg" alt="" />
           <div>
             <h4>120$</h4>
-            <p>Budget</p>
+            <p style="color: gray">Budget</p>
           </div>
         </div>
 
@@ -27,14 +27,16 @@
           <img src="../../../assets/hourl-rate.svg" alt="" />
           <div>
             <h4>4</h4>
-            <p>Jobs Posted</p>
+
+            <p style="color: gray">Jobs Posted</p>
           </div>
         </div>
       </div>
     </div>
     <div style="display: flex; flex-direction: column" class="bio">
       <h4>About me</h4>
-      <p>
+
+      <p style="color: gray">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
         facere numquam, dolorum deserunt est soluta ducimus esse in dolore,
         impedit cum dolorem, maxime quasi? Delectus ipsa sunt, facilis
@@ -62,7 +64,6 @@
         display: flex;
         flex-direction: column;
       "
-      class="bio"
     >
       <div class="jobs" *ngFor="let job of jobs; let i = index">
         <div class="job" routerLink="/job/{{ job.id }}">
@@ -75,6 +76,7 @@
 
             <mat-icon color="primary">bookmark</mat-icon>
           </div>
+          style="color: gray;"
           <p>{{ job.desc }}</p>
           <div class="skills">
             <span *ngFor="let skill of jobs[i].requiredskills">{{
