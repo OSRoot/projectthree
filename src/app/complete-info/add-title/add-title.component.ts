@@ -7,16 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AddTitleComponent {
 
-  title: string = ''
-
+  title: string = '';
   constructor() {
-    this.get_title()
+    this.get_title();
   }
 
   get_title() {
     let title = localStorage.getItem('Title');
     this.title = JSON.stringify(title)
     this.title = this.title.substring(1, this.title.length - 1)
+    if (this.title=='null' || this.title =='ul'){
+      this.title = 'Developer'
+    }
+    this.set_title()
 
   }
   set_title() {

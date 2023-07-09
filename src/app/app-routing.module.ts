@@ -31,6 +31,7 @@ import { ScopeComponent } from './complete-info/scope/scope.component';
 import { BudgetComponent } from './complete-info/budget/budget.component';
 import { RateComponent } from './complete-info/rate/rate.component';
 import { ProfileComponent } from './complete-info/profile/profile.component';
+import { SpinnerComponent } from './shared/spinner/spinner.component';
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -64,6 +65,8 @@ const routes: Routes = [
   { path: 'create-profile/budget', component: BudgetComponent },
   { path: 'client', component: ClientComponent },
   { path: 'freelancer', component: FreelancerComponent },
+  { path: 'spin', component: SpinnerComponent },
+
 
 ];
 

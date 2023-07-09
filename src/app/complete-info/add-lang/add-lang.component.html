@@ -91,10 +91,10 @@
 
     </div>
     <div class="right-right">
-      <div class="langs">
-        <div class="lang">
-          <h6>Languages</h6>
-          <div *ngFor="let lan of languages;let i = index">
+      <div style="background: #130125; padding: 20px;" class="langs">
+        <h6>Languages</h6>
+        <div  class="lang">
+          <div  *ngFor="let lan of languages;let i = index">
             <h5>{{lan.name}}</h5>
             <p>{{lan.level}}</p>
           </div>

@@ -22,6 +22,9 @@ export class HeadlineComponent {
   get_headline() {
     let headline = localStorage.getItem('headline')
     this.headline = JSON.stringify(headline);
-    this.headline = this.headline.substring(1, this.headline.length - 1)
+    this.headline = this.headline.substring(1, this.headline.length - 1);
+    if(this.headline =='ul' || this.headline =='null'){
+      this.headline = ''
+    }
   }
 }

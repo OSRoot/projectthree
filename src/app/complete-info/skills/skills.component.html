@@ -54,28 +54,17 @@
         <p>Search skills or add your own</p>
         <div class="icon-input">
           <mat-icon>search</mat-icon>
-          <input type="text" />
+          <input type="text" [(ngModel)]="inputText" (input)="onInputChange()" />
         </div>
       </label>
-    </div>
-
-    <div class="example">
-      <h6>Popular Skills</h6>
-      <div class="chips">
-        <div class="chip" *ngFor="let skill of skills">
-          <label for="{{ skill }}"
-            >{{ skill }}
-            <input
-              (change)="logger($event)"
-              id="{{ skill }}"
-              value="{{ skill }}"
-              type="checkbox"
-            />
-            <mat-icon id="{{ skill }}">add</mat-icon>
-          </label>
+      <div *ngIf="filteredSkills.length > 0" class="filtered-skills">
+        <div *ngFor="let skill of filteredSkills">
+          <button style="color: #fff;"  (click)="addSkill(skill)">{{ skill }}</button>
         </div>
       </div>
     </div>
+
+
   </div>
 </div>
 

@@ -53,11 +53,66 @@
 
   <div class="add-experience">
     <div class="container-input">
-      <label for="experience">
+      <label for="experience" (click)="show_popup=1">
         <div id="experience"><mat-icon>add</mat-icon></div>
 
         <p>Add Education</p>
       </label>
+    </div>
+  </div>
+
+  <div class="add-experience-popup" *ngIf="show_popup">
+    <div class="add-experience-popup-content">
+     <div style=" padding: 10px 20px;display: flex; justify-content: space-between;"> <h2>Add Education</h2>
+      <mat-icon style="cursor: pointer;" (click)="show_popup=0">close</mat-icon>
+    </div>
+
+      <form>
+        <div>
+          <label for="title">School
+            <input type="text" id="title" name="title" required />
+          </label>
+
+        </div>
+        <div>
+          <label for="company">Degree
+            <input type="text" id="company" name="company" required />
+          </label>
+
+        </div>
+        <div>
+          <label for="description">Field of study
+            <input id="description" name="description" required>
+          </label>
+
+        </div>
+
+        <div>
+          <label for="region">Description
+            <input type="text" id="region" name="region" required />
+          </label>
+
+        </div>
+
+        <div>
+          <label for="startDate">Start Date
+            <input type="date" id="startDate" name="startDate" required />
+          </label>
+
+        </div>
+
+        <div>
+          <label for="endDate">End Date
+            <input type="date" id="endDate" name="endDate" />
+          </label>
+
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+
+          <button type="submit">Add</button>
+          <button type="button"(click)="show_popup=0">Close</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>

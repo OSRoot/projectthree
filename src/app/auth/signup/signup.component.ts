@@ -28,9 +28,9 @@ export class SignupComponent implements OnInit {
   // ##################################################################
   // ##################################################################
   ngOnInit(): void {
+    this.set_role()
     this.get_roleName()
     this.show_toaster()
-    this.set_role()
     this.get_signup_info()
     this.signup_form = new FormGroup({
       username: new FormControl('', Validators.required),
@@ -160,7 +160,7 @@ export class SignupComponent implements OnInit {
     let role = localStorage.getItem('roleName');
     this.roleName = JSON.stringify(role)
     this.roleName = this.roleName.substring(1, this.roleName.length - 1)
-    
+
 
   }
 

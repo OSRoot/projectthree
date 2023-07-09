@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
 import { HeaderworkComponent } from './headerwork/headerwork.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 
 
@@ -15,7 +16,8 @@ import { HeaderworkComponent } from './headerwork/headerwork.component';
     SearcherComponent,
     HeaderComponent,
     SidemenuComponent,
-    HeaderworkComponent
+    HeaderworkComponent,
+    SpinnerComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,7 @@ import { HeaderworkComponent } from './headerwork/headerwork.component';
     MatIconModule
   ],
   exports: [
-    HeaderComponent, SearcherComponent, SidemenuComponent, HeaderworkComponent
+    HeaderComponent, SearcherComponent, SidemenuComponent, HeaderworkComponent,SpinnerComponent
   ]
 })
 export class SharedModule { }

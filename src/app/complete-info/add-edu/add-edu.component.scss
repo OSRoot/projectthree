@@ -145,7 +145,92 @@
 .main {
     padding: 100px;
     color: #bebebe;
+  position: relative;
+    .add-experience-popup{
+      background-color: #292b3a;
+      border: 1px solid #5075d5;
+      text-align: center;
+      // padding: 20px;
+      border-radius: 10px;
+      position: absolute;
+      z-index: 1000;
+      top: -15%;
+      right: 20%;
+      left: 20%;
+      bottom: 5%;
+      @media(max-width:768px){
+        overflow: scroll;
+      }
+      .add-experience-popup-content{
+        color: #eee;
+        form{
+          // padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          button{
+            width: fit-content;
+            background: #5075d5;
+            border: none;
+            margin: 20px;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            color: #bebebe;
+            &:active{
+              transform: scale(0.95);
+              color: #fff;
+            }
+          }
+          div{
+            label{
+              // border: 1px solid #131524;
+              border-radius: 10px;
 
+              input{
+                border: 1px solid #5075d5;
+                outline: 0;
+                color: #fff;
+                height: 50px;
+                border-radius: 5px;
+                &:focus{
+                  border: 3px solid #5075d5;
+                }
+              }
+            }
+
+            width: 300px;
+            padding: 20px;
+          }
+        }
+      }
+    }
+    .add-experience-popup-content label input,
+  .add-experience-popup-content label textarea,
+  .add-experience-popup-content label select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #333;
+    background-color: transparent;
+  }
+
+  .add-experience-popup-content label:before {
+    content: attr(for);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+  }
     .add-experience {
         background: #292b3a;
         border: 2px solid gray;

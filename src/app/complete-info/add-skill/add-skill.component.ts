@@ -10,10 +10,15 @@ export class AddSkillComponent implements OnInit {
   filteredSkills: string[] = [];
   inputText = '';
   searchFocused = false;
-
+  saved_skills:any
   constructor(private elementRef: ElementRef) { }
 
   ngOnInit(): void {
+    let skills:any = localStorage.getItem('savedSkills')
+    let saved = JSON.parse(skills)
+    this.saved_skills = saved
+    console.log(this.saved_skills);
+
   }
 
   onInputChange() {

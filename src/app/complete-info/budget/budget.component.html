@@ -49,7 +49,42 @@
     <h2>Tell us about you budget</h2>
     <p>This will help us match you to talent within in your range.</p>
   </div>
-  <div class="right-side"></div>
+  <div class="right-side">
+    <div style="display: flex; flex-direction: row;">
+      <div class="hourlyrate">
+        <mat-icon>timer</mat-icon>
+        <label for="">Hourly Rate</label>
+      </div>
+      <div class="budget">
+        <mat-icon>book_online</mat-icon>
+        <label for="">Project Budget</label>
+        </div>
+    </div>
+      <div style="display: flex; flex-direction: row;" class="hours-input">
+        <div>
+          <label for="">
+            From
+          </label>
+          <input type="number" value="" placeholder="Hours">
+        </div>
+
+        <div>
+          <label for="">
+            To
+          </label>
+          <input type="number" value="" placeholder="Hours">
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row;" class="hours-input">
+        <div>
+          <label for="">
+            Max Project budget (USD)
+          </label>
+          <input type="number" value="" placeholder="$ 100 ">
+        </div>
+
+      </div>
+  </div>
 </div>
 
 <div class="footer">
@@ -85,7 +120,7 @@
       </button>
     </div>
     <div class="skip-next">
-      <button routerLink="/home">Next</button>
+      <button routerLink="/home">Post Job Now</button>
     </div>
   </div>
 </div>

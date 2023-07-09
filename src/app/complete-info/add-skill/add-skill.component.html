@@ -45,6 +45,13 @@
 </div>
 >
 <div class="main">
+  <div class="skills" >
+    <div class="skill" *ngFor="let skill of saved_skills">
+      <div class="div">
+        <p>{{skill}}</p>
+      </div>
+    </div>
+  </div>
   <h2>Nearly there! What work are you here to do?</h2>
   <p>
     Your skills show clients what you can offer, and help us choose which jobs
@@ -65,6 +72,7 @@
       </div>
     </div>
   </div>
+
 </div>
 
 <div class="footer">

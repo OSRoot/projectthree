@@ -1,11 +1,59 @@
 <app-header></app-header>
-<div class="main">
-  <div class="top-header"></div>
-  <div class="second-section">
-    <div class="left"></div>
-    <div class="right">
-      <div class="title-rate-overview"></div>
-      <div class="title-rate-overview"></div>
+
+<div class="main-content">
+  <div class="sidemenu">
+    <ul>
+      <li>
+        <mat-icon>work_outline</mat-icon>
+        <a routerLink="/jobs">My Jobs</a>
+      </li>
+      <li>
+        <mat-icon>home</mat-icon>
+        <a routerLink="/home">Home</a>
+      </li>
+      <li>
+        <mat-icon>notifications</mat-icon>
+        <a routerLink="/notifications">Notifications</a>
+      </li>
+      <li>
+        <mat-icon>message</mat-icon>
+        <a routerLink="/messaging">Messaging</a>
+      </li>
+      <li>
+        <mat-icon>description</mat-icon>
+        <a routerLink="/proposals">My Proposals</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="primary-content">
+    <div class="profile">
+      <div class="image">
+        <img src="../../../assets/jobful.png" alt="" />
+        <h3>Username</h3>
+        <h5>Freelancer</h5>
+        <p>Egypt, Cairo</p>
+      </div>
+    </div>
+
+    <div class="righter">
+      <h3>Work</h3>
+      <div class="hourly">
+        <div class="cards">
+          <img src="../../../assets/hourl-rate.svg" alt="">
+          <div>
+            <h4>120$</h4>
+            <p>Hourly Rate</p>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="../../../assets/hourl-rate.svg" alt="">
+          <div>
+            <h4>10</h4>
+            <p>Total Proposals</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

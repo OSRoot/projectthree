@@ -66,31 +66,33 @@
       </div>
     </div>
     <div class="right-side">
+      <form [formGroup]="profile_form">
       <div class="country">
-        <label for="country">Country</label>
-        <select name="" id="">
-          <option value="" hidden>select country</option>
-          <option value="Egypt">Egypt</option>
-          <option value="Saudi Arabia">Saudi Arabia</option>
-          <option value="Emirates">UAE</option>
-          <option value="England">England</option>
-        </select>
-      </div>
 
-      <div class="city">
-        <label for="city">City</label>
-        <input type="text" placeholder="ex. Mansoura" />
+          <label for="country">Country</label>
+          <select name="" id="" (change)="on_change_country($event)">
+            <option value="" hidden>select country</option>
+            <option *ngFor="let country of countries" value="{{country}}">{{country}}</option>
+
+          </select>
+
+        </div>
+
+        <div class="city">
+          <label for="city">City</label>
+          <input [(ngModel)]="city" formControlName="city" type="text" placeholder="ex. Mansoura" />
       </div>
 
       <div class="street">
         <label for="street">Street</label>
-        <input type="text" placeholder="ex. Stree no 70" />
+        <input [(ngModel)]="street" formControlName="street" type="text" placeholder="ex. Stree no 70" />
       </div>
 
       <div class="phone">
         <label for="phone">Phone</label>
-        <input type="text" placeholder="ex. 012xxxxxxxx" />
+        <input [(ngModel)]="phone" formControlName="phone" type="text" placeholder="ex. 012xxxxxxxx" />
       </div>
+    </form>
     </div>
   </div>
 </div>
@@ -100,7 +102,7 @@
   <div class="btns">
     <button routerLink="/create-profile/rate">Back</button>
     <div class="skip-next">
-      <button style="width: 200px; height: 50px" routerLink="/freelancer">
+      <button [disabled]="profile_form.invalid" style="width: 200px; height: 50px" routerLink="/freelancer">
         Submit Profile
       </button>
     </div>

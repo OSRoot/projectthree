@@ -8,10 +8,24 @@ import { Component } from '@angular/core';
 export class AddEmploymentComponent {
 
   show_popup = 0;
-  // show_add_exp = false
+
+
+  experience= [
+    {
+      "id": 0,
+      "title": "string",
+      "company": "string",
+      "description": "stringstri",
+      "region": "string",
+      "country": "string",
+      "workingInThisRole": true,
+      "startDate": "string",
+      "endDate": "string",
+      "freelancerId": 0
+    }]
 
   constructor() { }
 
 
-
+  dismiss(){}
 }

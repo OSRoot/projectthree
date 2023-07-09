@@ -44,7 +44,7 @@
   </div>
 </div>
 
-<div class="main">
+<div class="main" (click)="dismiss()">
   <h2>If you have relevant work experience, add it here.</h2>
   <p>
     Freelancers who add their experience are twice as likely to win work. But if
@@ -54,7 +54,7 @@
 
   <div class="add-experience">
     <div class="container-input">
-      <label for="experience" >
+      <label for="experience" (click)="show_popup=1">
         <div id="experience"><mat-icon>add</mat-icon></div>
 
         <p>Add Experience</p>
@@ -64,32 +64,59 @@
 
   <div class="add-experience-popup" *ngIf="show_popup">
     <div class="add-experience-popup-content">
-      <h2>Add Experience</h2>
+     <div style=" padding: 10px 20px;display: flex; justify-content: space-between;"> <h2>Add Experience</h2>
+      <mat-icon style="cursor: pointer;" (click)="show_popup=0">close</mat-icon>
+    </div>
 
       <form>
-        <label for="title">Title</label>
-        <input type="text" id="title" name="title" required>
+        <div>
+          <label for="title">Title
+            <input type="text" id="title" name="title" required />
+          </label>
 
-        <label for="company">Company</label>
-        <input type="text" id="company" name="company" required>
+        </div>
+        <div>
+          <label for="company">Company
+            <input type="text" id="company" name="company" required />
+          </label>
 
-        <label for="description">Description</label>
-        <textarea id="description" name="description" required></textarea>
+        </div>
+        <div>
+          <label for="description">Description
+            <input id="description" name="description" required>
+          </label>
 
-        <label for="region">Region</label>
-        <input type="text" id="region" name="region" required>
+        </div>
 
-        <label for="country">Country</label>
-        <input type="text" id="country" name="country" required>
+        <div>
+          <label for="region">Region
+            <input type="text" id="region" name="region" required />
+          </label>
 
-        <label for="startDate">Start Date</label>
-        <input type="date" id="startDate" name="startDate" required>
+        </div>
+        <div>
+          <label for="country">Country
+            <input type="text" id="country" name="country" required />
+          </label>
 
-        <label for="endDate">End Date</label>
-        <input type="date" id="endDate" name="endDate">
+        </div>
+
+        <div>
+          <label for="startDate">Start Date
+            <input type="date" id="startDate" name="startDate" required />
+          </label>
+
+        </div>
+
+        <div>
+          <label for="endDate">End Date
+            <input type="date" id="endDate" name="endDate" />
+          </label>
+
+        </div>
 
         <button type="submit">Add</button>
-        <button type="button">Close</button>
+        <button type="button"(click)="show_popup=0">Close</button>
       </form>
     </div>
   </div>
